@@ -1,0 +1,133 @@
+p {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.wrapper {
+  width: 1169px;
+  margin: auto;
+}
+
+.header {
+  background: #FFFFFF;
+}
+
+.headerWrap {
+  padding: 25px 0 9px 0;
+}
+
+.headerNav {
+  display: flex;
+  gap: 64px;
+}
+.headerNav__item {
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #343434;
+}
+.headerNav__downArrow {
+  margin-left: 6px;
+}
+
+.promo {
+  background: #CCB2A3;
+}
+
+.promoWrap {
+  height: 590px;
+  display: flex;
+}
+
+.promoLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 30px;
+}
+.promoLeft__text {
+  max-width: 270px;
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 110%;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  margin: 53px 0;
+}
+.promoLeft__text_marked {
+  display: contents;
+  color: #FF9619;
+}
+.promoLeft__btn {
+  padding: 14px 21px;
+  background: #5B5B5B;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  align-self: start;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #5B5B5B;
+  border: none;
+}
+.promoLeft__btn:hover {
+  background-color: #FF9619;
+}
+
+.promoRight__text {
+  display: flex;
+  justify-content: end;
+  margin: 37px 0;
+  font-family: "Raleway";
+  font-size: 20px;
+  line-height: 127.5%;
+  color: #FFFFFF;
+}
+
+.promoSwiper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.promoSwiper__list {
+  display: flex;
+}
+
+.catalogAccordion {
+  display: block;
+  cursor: pointer;
+}
+.catalogAccordion__heading {
+  display: block;
+}
+
+.catalogList {
+  position: absolute;
+  margin-top: 3px;
+  background-color: #FFFFFF;
+  border: none;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  display: grid;
+}
+.catalogList__item {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 15px;
+  color: #343434;
+  padding: 13px;
+}
+.catalogList__item:hover {
+  background-color: #FF9619;
+}/*# sourceMappingURL=style.css.map */

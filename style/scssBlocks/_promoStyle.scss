@@ -1,0 +1,91 @@
+.promo{
+    background: #CCB2A3;
+}
+.promoWrap{
+    height: 590px;
+
+    display: flex;
+}
+.promoLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 30px;
+    &__text{
+        max-width: 270px;
+        font-family: 'Raleway';
+        font-weight: 600;
+        font-size: 42px;
+        line-height: 110%;
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        margin: 53px 0;
+        &_marked{
+            display: contents;
+            color: #FF9619;
+        }
+    }
+    &__btn{
+        padding: 14px 21px;
+        background: #5B5B5B;
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        align-self: start;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background: #5B5B5B;
+        border: none;
+        &:hover{
+            background-color: #FF9619;
+        }
+    }
+}
+.promoRight{
+    &__text{
+        display: flex;
+        justify-content: end;
+        margin: 37px 0;
+        font-family: 'Raleway';
+        font-size: 20px;
+        line-height: 127.5%;        
+        color: #FFFFFF;
+    }
+}
+.promoSwiper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__list{
+        display: flex;
+    }
+}
+.catalogAccordion{
+    display: block;
+    cursor: pointer;
+
+    &__heading{
+        display: block;
+    }
+}
+.catalogList{
+    position: absolute;
+    margin-top: 3px;
+    background-color: #FFFFFF;
+    border: none;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    display: grid;
+    &__item{
+        font-family: 'Raleway';
+        font-weight: 400;
+        font-size: 15px;
+        color: #343434;
+        padding: 13px;
+        &:hover{
+            background-color: #FF9619;
+        }
+    }
+}

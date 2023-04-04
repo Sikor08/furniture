@@ -1,0 +1,23 @@
+.header{
+    background: #FFFFFF;
+}
+.headerWrap{
+    padding: 25px 0 9px 0;
+}
+.headerNav{
+    display: flex;
+    gap: 64px;
+    &__item{
+        font-family: 'Raleway';
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 150%;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        color: #343434;
+    }
+    &__downArrow{
+        margin-left: 6px;
+    }
+}
