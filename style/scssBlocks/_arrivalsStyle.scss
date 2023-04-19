@@ -1,0 +1,61 @@
+.arrivalsWrap{
+    height: 757px;
+}
+.arrivalsSlider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.arrivalsSliderList{
+    display: flex;
+    gap: 30px;
+}
+.arrivalsHeading{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 110%;
+    color: #343434;
+    &_marked{
+        color: #FF9619;
+    }
+}
+.arrivalsSliderSlide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    &_active:hover{
+        width: 120%;
+    }
+    &__heading{
+        margin: 15px 0 5px 0;
+        font-family: 'Raleway';
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #343434;
+    }
+    &__price{
+        font-family: 'Open Sans';
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;/* identical to box height */
+        color: #FF9619;
+    }
+}
+
+.arrivalsBtn{
+    display: flex;
+    margin: 0 auto;
+    padding: 13px 21px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #5B5B5B;
+    border: none;
+}

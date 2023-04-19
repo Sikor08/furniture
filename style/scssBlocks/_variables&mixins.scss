@@ -8,8 +8,11 @@ ul{
     padding: 0;
 }
 .wrapper{
-    width: $siteWidth;
+    max-width: $siteWidth;
     margin: auto;
+    @media (max-width:$mediaWidth) {
+        padding: 0 20px;
+    }
 }
 
 

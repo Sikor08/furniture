@@ -3,10 +3,16 @@
 }
 .headerWrap{
     padding: 25px 0 9px 0;
+   
 }
 .headerNav{
     display: flex;
     gap: 64px;
+    @media (max-width: $mediaWidth) {
+        justify-content: space-between;
+        gap: 0;
+    }
+  
     &__item{
         font-family: 'Raleway';
         font-weight: 600;
@@ -16,8 +22,80 @@
         align-items: center;
         text-transform: uppercase;
         color: #343434;
+        &:nth-child(8), &:nth-child(9){
+            @media (min-width: $mediaWidth) {
+                display: none;
+            }
+        }
+        &:not(:nth-child(4), :nth-child(7), :nth-child(8), :nth-child(9)){
+            @media (max-width: $mediaWidth) {
+            display: none;
+        }
+    }
+    &:nth-child(4){
+        @media (max-width: $mediaWidth) {
+            width: 50%;
+        }
+    }
+    &:nth-child(8):hover{
+        fill:#FF9619;
+    }
+    }
+    
+    &__logo{
+        @media (max-width: $mediaWidth) {
+            width: 92px;
+            height: 34px;
+        }
+        
     }
     &__downArrow{
         margin-left: 6px;
+    }
+}
+.accordion{
+    display: block;
+    cursor: pointer;
+
+    &__heading{
+        display: block;
+    }
+}
+.catalogList{
+    position: absolute;
+    margin-top: 3px;
+    background-color: #FFFFFF;
+    border: none;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    display: grid;
+    &__item{
+        font-family: 'Raleway';
+        font-weight: 400;
+        font-size: 15px;
+        color: #343434;
+        padding: 13px;
+        &:hover{
+            background-color: #FF9619;
+        }
+    }
+}
+.languageAccordion{
+    color: rgba(52, 52, 52, 0.7);
+}
+.languageList{
+    cursor: pointer;
+    position: absolute;
+    padding: 6px;
+    background-color: #FFFFFF;
+    border: none;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    color: rgba(52, 52, 52, 0.7);
+    &__item:hover{
+        color: #FF9619;
+
     }
 }
