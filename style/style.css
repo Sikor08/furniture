@@ -1,3 +1,8 @@
+body {
+  position: relative;
+  height: 1000vh;
+}
+
 p {
   margin: 0;
 }
@@ -18,7 +23,8 @@ ul {
 }
 
 .header {
-  background: #FFFFFF;
+  position: fixed;
+  width: 100%;
 }
 
 .headerWrap {
@@ -119,6 +125,46 @@ ul {
 }
 .languageList__item:hover {
   color: #FF9619;
+}
+
+.humburger {
+  z-index: 2;
+  cursor: pointer;
+}
+.humburger__active :nth-child(1) {
+  display: none;
+}
+.humburger__active :nth-child(2) {
+  transform: translate(-50%, 0%) rotate(45deg);
+  position: absolute;
+}
+.humburger__active :nth-child(3) {
+  transform: translate(-50%, 0%) rotate(-45deg);
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px 0;
+  background-color: black;
+  transition: transform 0.5s;
+}
+
+.burgerMenuList {
+  padding: 30px 0;
+  background-color: #FFFFFF;
+  border: 1px solid #000;
+  position: absolute;
+  width: 50%;
+  top: 0;
+  left: 100%;
+  z-index: 1;
+  transition: 0.4s ease-out;
+}
+.burgerMenuList__open {
+  left: 50%;
+  transition: 0.4s ease-out;
 }
 
 .promo {

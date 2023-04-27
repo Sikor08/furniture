@@ -1,5 +1,7 @@
 .header{
-    background: #FFFFFF;
+    position: fixed;
+    width: 100%;
+
 }
 .headerWrap{
     padding: 25px 0 9px 0;
@@ -97,5 +99,49 @@
     &__item:hover{
         color: #FF9619;
 
+    }
+}
+
+// burgerMenu
+.humburger{
+    z-index: 2;
+    // display: none;
+    cursor: pointer;
+    &__active{
+        :nth-child(1){
+            display: none;
+        }
+        
+        :nth-child(2){
+            transform: translate(-50%, 0%) rotate(45deg); 
+            position: absolute; 
+        }
+        :nth-child(3){
+            transform: translate(-50%, 0%) rotate(-45deg);  
+        }
+    }
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: black;
+    transition: transform 0.5s; 
+}
+.burgerMenuList{
+    padding: 30px 0;
+    background-color: #FFFFFF;
+    border: 1px solid #000;
+    position: absolute;
+    width: 50%;
+    top: 0;
+    left: 100%;
+    z-index: 1;
+    transition: .4s ease-out;
+
+    &__open{
+        left: 50%;
+        transition: .4s ease-out;
     }
 }
