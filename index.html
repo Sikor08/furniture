@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="header">
+        <header class="header">
             <div class="wrapper">
                 <div class="headerWrap">
                     <ul class="headerNav">
@@ -58,34 +58,70 @@
                                 </svg>
                         </li>
                         <li class="headerNav__item">
-                            <div class="humburger">
+                            <div class="burger">
                                 <span class="bar"></span>
                                 <span class="bar"></span>
                                 <span class="bar"></span>
                             </div>
                         </li>
                     </ul>
-                    <div class="burgerMenuList">
-                        <div class="">Диван</div>
-                        <div class="">Диван</div>
-                        <div class="">Диван</div>
-                        <div class="">Диван</div>
-                        <div class="">Диван</div>
-                        <div class="">Диван</div>
-                        <div class="">Диван</div>
-
-                    </div>
+                    <ul class="burgerList">
+                        <li class="burgerList__item">
+                            <a class="burgerList__link" href="#">Каталог</a>
+                        </li>
+                        <li class="burgerList__item">
+                            <a class="burgerList__link" href="#">Диваны</a>
+                        </li>
+                        <li class="burgerList__item">
+                            <a class="burgerList__link" href="#">Кресла</a>
+                        </li>
+                        <li class="burgerList__item">
+                            <a class="burgerList__link" href="#">Стулья</a>
+                        </li>
+                        <li class="burgerList__item">
+                            <a class="burgerList__link" href="#">Матрацы</a>
+                        </li>
+                        <li class="burgerList__item">
+                            <a class="burgerList__link" href="#">Пуфы</a>
+                        </li>
+                        <li class="burgerList__item">
+                            <a class="burgerList__link" href="#">Эксклюзивная мебель</a>
+                        </li>
+                        <li class="burgerList__item">
+                            <a class="burgerList__link" href="#">2D-3D модели</a>
+                        </li>
+                        <li class="burgerList__item">
+                            <a class="burgerList__link" href="#">Индивидуальная мебель</a>
+                        </li>
+                        <li class="burgerList__item">
+                            <a class="burgerList__link" href="#">2D-3D модели</a>
+                        </li>
+                        <li class="burgerList__item">
+                            <a class="burgerList__link" href="#">Шоу-рум</a>
+                        </li>
+                        <li class="burgerList__item">
+                            <a class="burgerList__link" href="#">Страница портнеров дизайнеров</a>
+                        </li>
+                        <li class="burgerList__item">
+                            <a class="burgerList__link" href="#">Дилерам</a>
+                        </li>
+                        <li class="burgerList__item">
+                            <a class="burgerList__link" href="#">Контакты</a>
+                        </li>
+                        <li class="burgerList__item">
+                            <a class="burgerList__link" href="#">Каталог</a>
+                        </li>
+                        
+                    </ul>
                 </div>
             </div>
-        </div>
-        
-        <!-- <div class="promo">
+        </header>
+        <div class="promo">
             <div class="promoContainer">
-                <div class="wrapper">
                     <div class="promoWrap">
                         <div class="promoLeft">
                             <p class="promoLeft__text">
-                                <span class="promoLeft__text promoLeft__text_marked">Л</span>УЧШАЯ ЖИЗНЬ, СОЗДАННАЯ ДЛЯ ВАС!
+                                <span class="promoLeft__text promoLeft__text_marked">Л</span>УЧШАЯ ЖИЗНЬ СОЗДАННАЯ ДЛЯ ВАС!
                             </p>
                             <button class="promoLeft__btn">
                                 Перейти в каталог
@@ -105,7 +141,7 @@
                                         <img src="img/promoImg3.jpg" alt="img">
                                     </li>
                                 </ul>
-                                <div class="promoSwiperButtons">
+                                <!-- <div class="promoSwiperButtons">
                                     <div id="leftButton">
                                         <svg width="19" height="31" viewBox="0 0 19 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M18.0898 0.742648L1.9985 15.9595L18.0898 29.9082" stroke="#5A5A5A" stroke-opacity="0.7" stroke-width="2"/>
@@ -116,7 +152,7 @@
                                             <path d="M0.999999 0.742648L17.0913 15.9595L1 29.9082" stroke="#5A5A5A" stroke-opacity="0.7" stroke-width="2"/>
                                             </svg>
                                     </div>
-                                </div>
+                                </div> -->
                                 <ul class="promoSwiperPagination">
                                     <li class="promoSwiperPagination__dot active"></li>
                                     <li class="promoSwiperPagination__dot"></li>
@@ -124,40 +160,54 @@
                                 </ul>
                             </div>
                             </div>
+                            <button class="promoLeft__btn promoLeft__btn_bottom">
+                                Перейти в каталог
+                            </button>
                         </div>
                     </div>
-                </div>
-        </div> -->
-        <!-- <div class="arrivals">
+        </div>
+        <div class="arrivals">
             <div class="wrapper">
                 <div class="arrivalsWrap">
                     <p class="arrivalsHeading">
                       <span class="arrivalsHeading_marked">Н</span>овинки  
                     </p>
                     <div class="arrivalsSlider">
-                        <div class="arrivalsSliderButtons__left">
+                        <div class="arrivalsSlider__buttons">
                             <svg width="19" height="31" viewBox="0 0 19 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M18.0898 0.742648L1.9985 15.9595L18.0898 29.9082" stroke="#5A5A5A" stroke-opacity="0.7" stroke-width="2"/>
                                 </svg>
                         </div>
                         <ul class="arrivalsSliderList">
                             <li class="arrivalsSliderSlide">
+                                <svg class="slideArrow slideArrow__left" width="19" height="31" viewBox="0 0 19 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.0898 0.742648L1.9985 15.9595L18.0898 29.9082" stroke="#5A5A5A" stroke-opacity="0.7" stroke-width="2"/>
+                                    </svg>
                                 <img class="arrivalsSliderSlide__img" src="img/newArrivalsSlide1.jpg" alt="">
                                     <p class="arrivalsSliderSlide__heading">ALBA</p>
                                     <p class="arrivalsSliderSlide__price">15000 UAH</p>
+                                    <svg  class="slideArrow slideArrow__right" width="19" height="31" viewBox="0 0 19 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.999999 0.742648L17.0913 15.9595L1 29.9082" stroke="#5A5A5A" stroke-opacity="0.7" stroke-width="2"/>
+                                        </svg>
                             </li>
                             <li class="arrivalsSliderSlide arrivalsSliderSlide_active">
+                                <svg class="slideArrow slideArrow__left" width="19" height="31" viewBox="0 0 19 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.0898 0.742648L1.9985 15.9595L18.0898 29.9082" stroke="#5A5A5A" stroke-opacity="0.7" stroke-width="2"/>
+                                    </svg>
                                 <img class="arrivalsSliderSlide__img" src="img/newArrivalsSlide2.jpg" alt="">
                                     <p class="arrivalsSliderSlide__heading">ALBA</p>
                                     <p class="arrivalsSliderSlide__price">15000 UAH</p>
+                                    <svg  class="slideArrow slideArrow__right" width="19" height="31" viewBox="0 0 19 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.999999 0.742648L17.0913 15.9595L1 29.9082" stroke="#5A5A5A" stroke-opacity="0.7" stroke-width="2"/>
+                                        </svg>
                             </li>
-                            <li class="arrivalsSliderSlide">
+                            <li class="arrivalsSliderSlide arrivalsSliderSlide__3">
                                 <img class="arrivalsSliderSlide__img" src="img/newArrivalsSlide3.jpg" alt="">
                                     <p class="arrivalsSliderSlide__heading">ALBA</p>
                                     <p class="arrivalsSliderSlide__price">15000 UAH</p>
                             </li>
                         </ul>
-                        <div class="arrivalsSliderButtons__right">
+                        <div class="arrivalsSlider__buttons">
                             <svg width="19" height="31" viewBox="0 0 19 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0.999999 0.742648L17.0913 15.9595L1 29.9082" stroke="#5A5A5A" stroke-opacity="0.7" stroke-width="2"/>
                                 </svg>
@@ -166,10 +216,10 @@
                     <button class="arrivalsBtn">перейти в каталог</button>
                 </div>
             </div>
-        </div> -->
+        </div>
     </div>
 
-    <!-- <script src="main.js"></script> -->
+    <script src="main.js"></script>
     <script src="burger.js"></script>
 </body>
 </html>

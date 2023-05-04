@@ -1,6 +1,6 @@
-const burgerBtn = document.querySelector('.humburger');
-const burgerMenuList = document.querySelector('.burgerMenuList');
+const burgerBtn = document.querySelector('.burger');
+const burgerMenuList = document.querySelector('.burgerList');
 burgerBtn.addEventListener('click', (e) => {
-    burgerBtn.classList.toggle('humburger__active');
-    burgerMenuList.classList.toggle('burgerMenuList__open')
+    burgerBtn.classList.toggle('burger__active');
+    burgerMenuList.classList.toggle('burgerList__open');
 });

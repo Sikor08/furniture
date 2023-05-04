@@ -1,15 +1,31 @@
-.arrivalsWrap{
-    height: 757px;
+.arrivals{
+    padding: 90px 0 125px 0;
+}
+.arrivalsHeading{
+    @media (max-width: $mediaWidth) {
+        margin-bottom: 30px;
+    }
 }
 .arrivalsSlider{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
+    &__buttons{
+        margin-bottom: 50px;
+        @media (max-width: $mediaWidth) {
+            display: none;
+        }
+    }
 }
 .arrivalsSliderList{
     display: flex;
     gap: 30px;
+    @media (max-width: $mediaWidth) {
+        flex-direction: column;
+        gap: 60px;
+        margin-bottom: 60px;
+    }
 }
 .arrivalsHeading{
     font-family: 'Raleway';
@@ -22,6 +38,7 @@
     }
 }
 .arrivalsSliderSlide{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,6 +46,12 @@
     &_active:hover{
         width: 120%;
     }
+    &__3{
+        @media (max-width: $mediaWidth) {
+            display: none;
+        }
+    }
+    
     &__heading{
         margin: 15px 0 5px 0;
         font-family: 'Raleway';
@@ -44,8 +67,21 @@
         line-height: 25px;/* identical to box height */
         color: #FF9619;
     }
+    &__buttons{
+        position: absolute;
+    }
 }
-
+.slideArrow{
+    position: absolute;
+    &__left{
+        left: -35px;
+        top: 35%;
+    }
+    &__right{
+        right: -35px;
+        top: 35%;
+    }
+}
 .arrivalsBtn{
     display: flex;
     margin: 0 auto;
@@ -58,4 +94,7 @@
     color: #FFFFFF;
     background: #5B5B5B;
     border: none;
+    &:hover{
+        background-color: #FF9619;
+    }
 }

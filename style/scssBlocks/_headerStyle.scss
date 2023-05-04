@@ -1,6 +1,8 @@
 .header{
-    position: fixed;
-    width: 100%;
+    @media (max-width: $mediaWidth) {
+        width: 100%;
+    }
+    
 
 }
 .headerWrap{
@@ -11,8 +13,7 @@
     display: flex;
     gap: 64px;
     @media (max-width: $mediaWidth) {
-        justify-content: space-between;
-        gap: 0;
+        gap: 35px;
     }
   
     &__item{
@@ -36,7 +37,7 @@
     }
     &:nth-child(4){
         @media (max-width: $mediaWidth) {
-            width: 50%;
+            width: 44%;
         }
     }
     &:nth-child(8):hover{
@@ -103,9 +104,9 @@
 }
 
 // burgerMenu
-.humburger{
+.burger{
     z-index: 2;
-    // display: none;
+    position: fixed;
     cursor: pointer;
     &__active{
         :nth-child(1){
@@ -125,23 +126,36 @@
     display: block;
     width: 25px;
     height: 3px;
-    margin: 5px 0;
+    margin: 6px 0;
     background-color: black;
-    transition: transform 0.5s; 
+    transition: transform 0.8s; 
 }
-.burgerMenuList{
-    padding: 30px 0;
-    background-color: #FFFFFF;
-    border: 1px solid #000;
-    position: absolute;
-    width: 50%;
-    top: 0;
-    left: 100%;
-    z-index: 1;
-    transition: .4s ease-out;
+.burgerList{
+    padding: 28px 20px;
+    margin: 0;
 
+    background-color: #FFFFFF;
+    position: fixed;
+    width: 100%;
+    top: 0;     
+    left: 100%;
+    transition: .8s ease-out;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     &__open{
-        left: 50%;
-        transition: .4s ease-out;
+        left: 37%;
+    }
+    &__link{
+        text-decoration: none;
+        font-family: 'Raleway';
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 185.5%;
+        color: #4B4844;
+        &:hover{
+            color: #FF9619;
+        }
     }
 }

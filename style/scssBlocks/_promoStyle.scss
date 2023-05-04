@@ -1,19 +1,32 @@
 .promo{
-    padding-bottom: 300px;
+    height: 800px;
+    @media (max-width: $mediaWidth) {
+        height: inherit;
+    }
 }
 .promoContainer{
     background: #CCB2A3;
-    height: 590px;
+    height: 600px;
+    @media (max-width: $mediaWidth) {
+        height: 574px;
+    }
 }
 .promoWrap{
-        display: flex;
-
-}
+    max-width: $siteWidth;
+    margin: 0 auto;
+    display: flex;
+    @media (max-width: $mediaWidth) {
+        flex-direction: column;
+    }
+ }
 .promoLeft{
     display: flex;
     flex-direction: column;
     margin-right: 30px;
     padding: 120px 0;
+    @media (max-width: $mediaWidth) {
+        padding: 22px 24px;
+    }
     &__text{
         max-width: 270px;
         font-family: 'Raleway';
@@ -25,13 +38,22 @@
         text-transform: capitalize;
         color: #FFFFFF;
         margin: 54px 0;
+        @media (max-width: $mediaWidth) {
+            font-family: 'Raleway';
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 110%;
+            max-width: fit-content;
+            margin: 0;
+
+        }
         &_marked{
             display: contents;
             color: #FF9619;
         }
     }
     &__btn{
-        padding: 14px 21px;
+        padding: 14px 22px;
         background: #5B5B5B;
         font-family: 'Raleway';
         font-weight: 700;
@@ -42,12 +64,32 @@
         color: #FFFFFF;
         background: #5B5B5B;
         border: none;
+        @media (max-width: $mediaWidth) {
+            display: none;
+            padding: 7px 22px;
+        }
         &:hover{
             background-color: #FF9619;
         }
+        &_bottom{
+            display: none;
+            @media (max-width: $mediaWidth) {
+                display: block;
+                align-self: center;
+
+            }
+        }
+        
     }
 }
 .promoRight{
+    height: 870px;
+
+    @media (max-width: $mediaWidth) {
+        display: flex;
+        flex-direction: column-reverse;
+        height: fit-content;
+    }
     &__text{
         display: flex;
         justify-content: end;
@@ -56,30 +98,31 @@
         font-size: 20px;
         line-height: 127.5%;        
         color: #FFFFFF;
+        @media (max-width: $mediaWidth) {
+            justify-content: center;
+            margin: 22px 0;
+        }
     }
 }
-.promoSwiper{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    &__list{
-        display: flex;
-    }
-}
+
 
 // swiperStyle
 .promoSwiper{
     position: relative;
     width: 870px;
     height: 700px;
+    @media (max-width: $mediaWidth) {
+        width: initial;
+        height: initial;
+    }
 }
 .promoSwiperSlides{
-    width: 100%;
-    height: 100%;
-    position: absolute;
+    
     &__slide{
         width: 100%;
-        z-index: 1;
+    }
+    img{
+        width: inherit;
     }
 }
 #leftButton, #rightButton{
@@ -102,6 +145,11 @@
     bottom: 10px;
     transform: translateX(-50%);
     gap: 10px;
+    @media (max-width: $mediaWidth) {
+        position: absolute;
+        bottom: -17px;
+        gap: 4px;
+    }
     &__dot{
         display: inline-block;
         width: 15px;
@@ -109,6 +157,10 @@
         border-radius: 50%;
         background: #F2F3F5;
         cursor: pointer;
+        @media (max-width: $mediaWidth) {
+            width: 7px;
+            height: 7px;
+        }
     }
 }
 .active{
