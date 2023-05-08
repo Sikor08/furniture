@@ -129,8 +129,10 @@ ul {
 
 .burger {
   z-index: 2;
-  position: fixed;
   cursor: pointer;
+}
+.burger__active {
+  position: fixed;
 }
 .burger__active :nth-child(1) {
   display: none;
@@ -394,7 +396,7 @@ ul {
   gap: 20px;
 }
 .arrivalsSlider__buttons {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 @media (max-width: 768px) {
   .arrivalsSlider__buttons {
@@ -403,11 +405,13 @@ ul {
 }
 
 .arrivalsSliderList {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
 @media (max-width: 768px) {
   .arrivalsSliderList {
+    display: flex;
     flex-direction: column;
     gap: 60px;
     margin-bottom: 60px;
@@ -432,11 +436,24 @@ ul {
   align-items: center;
   text-align: center;
 }
-.arrivalsSliderSlide_active:hover {
-  width: 120%;
+.arrivalsSliderSlide_1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.arrivalsSliderSlide_active {
+  top: -10px;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.arrivalsSliderSlide_active img {
+  width: 110%;
+}
+.arrivalsSliderSlide_3 {
+  grid-column: 3/4;
+  grid-row: 1/2;
 }
 @media (max-width: 768px) {
-  .arrivalsSliderSlide__3 {
+  .arrivalsSliderSlide_3 {
     display: none;
   }
 }
@@ -460,7 +477,13 @@ ul {
 }
 
 .slideArrow {
+  display: none;
   position: absolute;
+}
+@media (max-width: 768px) {
+  .slideArrow {
+    display: block;
+  }
 }
 .slideArrow__left {
   left: -35px;

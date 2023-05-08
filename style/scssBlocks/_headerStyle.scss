@@ -106,9 +106,10 @@
 // burgerMenu
 .burger{
     z-index: 2;
-    position: fixed;
     cursor: pointer;
     &__active{
+        position: fixed;
+
         :nth-child(1){
             display: none;
         }

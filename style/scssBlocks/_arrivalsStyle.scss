@@ -12,16 +12,18 @@
     justify-content: center;
     gap: 20px;
     &__buttons{
-        margin-bottom: 50px;
+        margin-bottom: 100px;
         @media (max-width: $mediaWidth) {
             display: none;
         }
     }
 }
 .arrivalsSliderList{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     @media (max-width: $mediaWidth) {
+        display: flex;
         flex-direction: column;
         gap: 60px;
         margin-bottom: 60px;
@@ -43,10 +45,21 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    &_active:hover{
-        width: 120%;
+    &_1{
+        grid-column: 1/2;
+        grid-row: 1/2;
     }
-    &__3{
+    &_active{
+        top: -10px;
+        img {
+            width: 110%;
+        }
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    &_3{
+        grid-column: 3/4;
+        grid-row: 1/2;
         @media (max-width: $mediaWidth) {
             display: none;
         }
@@ -72,7 +85,11 @@
     }
 }
 .slideArrow{
+    display: none;
     position: absolute;
+    @media (max-width: $mediaWidth) {
+        display: block;
+    }
     &__left{
         left: -35px;
         top: 35%;
@@ -97,4 +114,7 @@
     &:hover{
         background-color: #FF9619;
     }
+}
+.arrivalsSliderSlide_active{
+    
 }
