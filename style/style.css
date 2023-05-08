@@ -395,27 +395,19 @@ ul {
   justify-content: center;
   gap: 20px;
 }
-.arrivalsSlider__buttons {
-  margin-bottom: 100px;
-}
 @media (max-width: 768px) {
-  .arrivalsSlider__buttons {
+  .arrivalsSlider {
     display: none;
   }
+}
+.arrivalsSlider__buttons {
+  margin-bottom: 100px;
 }
 
 .arrivalsSliderList {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-}
-@media (max-width: 768px) {
-  .arrivalsSliderList {
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-    margin-bottom: 60px;
-  }
 }
 
 .arrivalsHeading {
@@ -452,11 +444,6 @@ ul {
   grid-column: 3/4;
   grid-row: 1/2;
 }
-@media (max-width: 768px) {
-  .arrivalsSliderSlide_3 {
-    display: none;
-  }
-}
 .arrivalsSliderSlide__heading {
   margin: 15px 0 5px 0;
   font-family: "Raleway";
@@ -480,19 +467,6 @@ ul {
   display: none;
   position: absolute;
 }
-@media (max-width: 768px) {
-  .slideArrow {
-    display: block;
-  }
-}
-.slideArrow__left {
-  left: -35px;
-  top: 35%;
-}
-.slideArrow__right {
-  right: -35px;
-  top: 35%;
-}
 
 .arrivalsBtn {
   display: flex;
@@ -509,4 +483,16 @@ ul {
 }
 .arrivalsBtn:hover {
   background-color: #FF9619;
+}
+
+.slider {
+  border: 1px solid #000;
+  max-width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slider-line {
+  display: flex;
+  transition: all ease 1s;
 }/*# sourceMappingURL=style.css.map */

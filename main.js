@@ -2,8 +2,6 @@
 let dots = document.getElementsByClassName('promoSwiperPagination__dot'),
     dotsAria = document.getElementsByClassName('promoSwiperPagination')[0],
     slides = document.getElementsByClassName('promoSwiperSlides__slide'),
-    leftButton = document.getElementById('leftButton'),
-    rightButton = document.getElementById('rightButton'),
     slideIndex = 1;
 
 const showSlides = (n) => {
@@ -29,12 +27,7 @@ const plusSlides = (n) => {
 const currentSlide = (n) => {
     showSlides(slideIndex = n);
 }
-// leftButton.addEventListener('click', () => {
-//     plusSlides(-1)
-// })
-// rightButton.addEventListener('click', () => {
-//     plusSlides(1)
-// })
+
 dotsAria.addEventListener('click', (e) => {
     for (let i = 0; i < dots.length + 1; i++) {
         if (e.target.classList.contains('promoSwiperPagination__dot') && e.target == dots[i - 1]) {

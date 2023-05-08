@@ -11,23 +11,17 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
+    @media (max-width: $mediaWidth) {
+        display: none;
+    }
     &__buttons{
         margin-bottom: 100px;
-        @media (max-width: $mediaWidth) {
-            display: none;
-        }
     }
 }
 .arrivalsSliderList{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    @media (max-width: $mediaWidth) {
-        display: flex;
-        flex-direction: column;
-        gap: 60px;
-        margin-bottom: 60px;
-    }
 }
 .arrivalsHeading{
     font-family: 'Raleway';
@@ -60,9 +54,6 @@
     &_3{
         grid-column: 3/4;
         grid-row: 1/2;
-        @media (max-width: $mediaWidth) {
-            display: none;
-        }
     }
     
     &__heading{
@@ -87,17 +78,6 @@
 .slideArrow{
     display: none;
     position: absolute;
-    @media (max-width: $mediaWidth) {
-        display: block;
-    }
-    &__left{
-        left: -35px;
-        top: 35%;
-    }
-    &__right{
-        right: -35px;
-        top: 35%;
-    }
 }
 .arrivalsBtn{
     display: flex;
@@ -115,6 +95,18 @@
         background-color: #FF9619;
     }
 }
-.arrivalsSliderSlide_active{
-    
+.mobileSwiper{
+    img{
 }
+}
+.slider{
+    border: 1px solid #000;
+    max-width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.slider-line{
+    display: flex;
+    transition: all ease 1s;
+}
+
