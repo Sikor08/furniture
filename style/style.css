@@ -485,14 +485,54 @@ ul {
   background-color: #FF9619;
 }
 
-.slider {
-  border: 1px solid #000;
+.mobileSwiper {
+  display: none;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .mobileSwiper {
+    display: block;
+  }
+}
+
+.mobileSwiper .slider {
   max-width: 80%;
   margin: 0 auto;
   overflow: hidden;
 }
 
-.slider-line {
+.sliderSlide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sliderSlideBottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sliderBottomBtn {
+  position: absolute;
+  top: 40%;
+}
+.sliderBottomBtn__next {
+  right: 0;
+}
+
+.slider-prev {
+  position: absolute;
+  top: 40%;
+}
+
+.slider-next {
+  position: absolute;
+  top: 40%;
+  right: 0;
+}
+
+.sliderList {
   display: flex;
   transition: all ease 1s;
 }/*# sourceMappingURL=style.css.map */
