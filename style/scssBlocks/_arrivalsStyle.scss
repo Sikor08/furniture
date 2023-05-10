@@ -100,6 +100,7 @@
     position: relative;
     @media (max-width: $mediaWidth) {
         display: block;
+        margin-bottom: 60px;
     }
 }
 .mobileSwiper

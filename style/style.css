@@ -492,6 +492,7 @@ ul {
 @media (max-width: 768px) {
   .mobileSwiper {
     display: block;
+    margin-bottom: 60px;
   }
 }
 
@@ -535,4 +536,66 @@ ul {
 .sliderList {
   display: flex;
   transition: all ease 1s;
+}
+
+.individual {
+  padding: 55px 0;
+}
+
+.individualWrap {
+  position: relative;
+  height: 482px;
+}
+
+.rectangles {
+  display: flex;
+  justify-content: end;
+  position: absolute;
+  width: 60%;
+  height: 390px;
+  background: #A9C2BE;
+  background-image: url(/img/cage.png);
+  z-index: 1;
+}
+
+.cage {
+  position: absolute;
+  z-index: 5;
+}
+
+.grey {
+  width: 70%;
+  height: 453px;
+  background: #5B5B5B;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.sofa {
+  width: 600px;
+  height: 400px;
+  background: #C0C0C0;
+  position: absolute;
+  top: 27px;
+  z-index: 2;
+}
+
+.coloredRectangle {
+  width: 225px;
+  height: 54px;
+  background-color: #FF9619;
+  position: absolute;
+  bottom: -29px;
+  z-index: 4;
+}
+
+.furitureRectangle {
+  width: 149px;
+  height: 110px;
+  background-color: #FF9619;
+  position: absolute;
+  top: -55px;
+  z-index: 4;
+  right: 15%;
 }/*# sourceMappingURL=style.css.map */
