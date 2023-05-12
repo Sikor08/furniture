@@ -541,6 +541,51 @@ ul {
 .individual {
   padding: 55px 0;
 }
+.individual__heading {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 100%;
+  font-variant: small-caps;
+  color: #FF9619;
+  margin-bottom: 25px;
+  max-width: 370px;
+}
+.individual__textUp {
+  font-family: "Raleway";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 125%;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  margin-bottom: 11px;
+}
+.individual__textBottom {
+  font-family: "Raleway";
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 135%;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  margin-bottom: 26px;
+  max-width: 375px;
+}
+@media (max-width: 1024px) {
+  .individual__textBottom {
+    margin-bottom: 17px;
+  }
+}
+.individual__button {
+  padding: 13px 18px;
+  background-color: #FF9619;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: none;
+}
 
 .individualWrap {
   position: relative;
@@ -550,12 +595,22 @@ ul {
 .rectangles {
   display: flex;
   justify-content: end;
-  position: absolute;
+  position: relative;
   width: 60%;
   height: 390px;
   background: #A9C2BE;
-  background-image: url(/img/cage.png);
   z-index: 1;
+}
+
+.rectLeft {
+  width: 70%;
+  height: 390px;
+  background-image: url(/img/cage.png);
+}
+
+.rectRight {
+  width: 30%;
+  height: 390px;
 }
 
 .cage {
@@ -564,25 +619,55 @@ ul {
 }
 
 .grey {
-  width: 70%;
-  height: 453px;
+  display: flex;
+  width: 71%;
+  height: 94%;
   background: #5B5B5B;
   position: absolute;
   top: 0;
   right: 0;
 }
+@media (max-width: 1024px) {
+  .grey {
+    width: 90%;
+    height: 89%;
+  }
+}
+
+.grey1 {
+  width: 44%;
+}
+@media (max-width: 1024px) {
+  .grey1 {
+    width: 70%;
+  }
+}
+
+.grey2 {
+  width: 56%;
+  padding: 101px 0 0 48px;
+}
 
 .sofa {
-  width: 600px;
-  height: 400px;
   background: #C0C0C0;
   position: absolute;
   top: 27px;
   z-index: 2;
 }
+@media (max-width: 1024px) {
+  .sofa {
+    width: 90%;
+    bottom: -15px;
+  }
+}
+
+.sofa img {
+  width: 100%;
+  height: 100%;
+}
 
 .coloredRectangle {
-  width: 225px;
+  width: 205px;
   height: 54px;
   background-color: #FF9619;
   position: absolute;
@@ -590,12 +675,23 @@ ul {
   z-index: 4;
 }
 
-.furitureRectangle {
+.furnitureRectangle {
   width: 149px;
   height: 110px;
   background-color: #FF9619;
   position: absolute;
-  top: -55px;
+  top: -40px;
   z-index: 4;
   right: 15%;
+}
+.furnitureRectangle__text {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 125%;
+  letter-spacing: 0.245em;
+  color: #FFFFFF;
+  position: absolute;
+  top: 55%;
+  left: 10px;
 }/*# sourceMappingURL=style.css.map */
