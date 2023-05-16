@@ -599,7 +599,16 @@ ul {
   width: 60%;
   height: 390px;
   background: #A9C2BE;
-  z-index: 1;
+  z-index: 2;
+}
+@media (max-width: 768px) {
+  .rectangles {
+    width: 80%;
+    position: absolute;
+    right: 0;
+    height: 260px;
+    top: 510px;
+  }
 }
 
 .rectLeft {
@@ -607,10 +616,20 @@ ul {
   height: 390px;
   background-image: url(/img/cage.png);
 }
+@media (max-width: 768px) {
+  .rectLeft {
+    display: none;
+  }
+}
 
 .rectRight {
   width: 30%;
   height: 390px;
+}
+@media (max-width: 768px) {
+  .rectRight {
+    display: none;
+  }
 }
 
 .cage {
@@ -626,11 +645,19 @@ ul {
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 1;
 }
 @media (max-width: 1024px) {
   .grey {
     width: 90%;
     height: 89%;
+  }
+}
+@media (max-width: 768px) {
+  .grey {
+    display: block;
+    width: 100%;
+    height: 653px;
   }
 }
 
@@ -652,12 +679,23 @@ ul {
   background: #C0C0C0;
   position: absolute;
   top: 27px;
-  z-index: 2;
+  right: 40%;
+  z-index: 3;
 }
 @media (max-width: 1024px) {
   .sofa {
+    margin-left: 20px;
+    bottom: 75px;
+  }
+}
+@media (max-width: 768px) {
+  .sofa {
+    height: 239px;
     width: 90%;
-    bottom: -15px;
+    right: 5%;
+    top: 365px;
+    bottom: 0;
+    margin: 0;
   }
 }
 
@@ -665,14 +703,33 @@ ul {
   width: 100%;
   height: 100%;
 }
+@media (max-width: 768px) {
+  .sofa img {
+    height: 100%;
+  }
+}
 
 .coloredRectangle {
   width: 205px;
   height: 54px;
   background-color: #FF9619;
   position: absolute;
-  bottom: -29px;
+  left: 29%;
   z-index: 4;
+  bottom: 0;
+}
+@media (max-width: 1024px) {
+  .coloredRectangle {
+    bottom: 21px;
+    left: 10%;
+  }
+}
+@media (max-width: 768px) {
+  .coloredRectangle {
+    width: 67px;
+    height: 15px;
+    bottom: -283px;
+  }
 }
 
 .furnitureRectangle {
