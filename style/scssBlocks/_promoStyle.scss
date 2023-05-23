@@ -1,12 +1,15 @@
 .promo{
     height: 800px;
-    @media (max-width: $mediaWidth) {
-        height: inherit;
-    }
+    // @media (max-width: 1167px) {
+    //     height: 500px;
+    // }
 }
 .promoContainer{
     background: #CCB2A3;
     height: 600px;
+    @media (max-width: 1167px) {
+        height: 410px;
+    }
     @media (max-width: $mediaWidth) {
         height: 574px;
     }
@@ -15,6 +18,9 @@
     max-width: $siteWidth;
     margin: 0 auto;
     display: flex;
+    @media (max-width: 1167px) {
+        padding: 0 15px;
+    }
     @media (max-width: $mediaWidth) {
         flex-direction: column;
     }
@@ -24,6 +30,9 @@
     flex-direction: column;
     margin-right: 30px;
     padding: 120px 0;
+    @media (max-width: 1167px) {
+        padding: 40px 0;
+    }
     @media (max-width: $mediaWidth) {
         padding: 22px 24px;
     }
@@ -109,11 +118,12 @@
 // swiperStyle
 .promoSwiper{
     position: relative;
-    width: 870px;
-    height: 700px;
+    height: 100%;
+    @media (max-width: 1167px) {
+        height: 450px;
+    }
     @media (max-width: $mediaWidth) {
-        width: initial;
-        height: initial;
+        
     }
 }
 .promoSwiperSlides{
@@ -142,7 +152,6 @@
     display: flex;
     position: absolute;
     left: 50%;
-    bottom: 10px;
     transform: translateX(-50%);
     gap: 10px;
     @media (max-width: $mediaWidth) {

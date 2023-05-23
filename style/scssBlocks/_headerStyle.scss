@@ -7,12 +7,14 @@
 }
 .headerWrap{
     padding: 25px 0 9px 0;
-   
+    @media (max-width: 1167px) {
+        padding: 25px 18px;
+    }
 }
 .headerNav{
     display: flex;
     gap: 64px;
-    @media (max-width: $mediaWidth) {
+    @media (max-width: 1167px) {
         gap: 35px;
     }
   
@@ -26,18 +28,18 @@
         text-transform: uppercase;
         color: #343434;
         &:nth-child(8), &:nth-child(9){
-            @media (min-width: $mediaWidth) {
+            @media (min-width: 1167px) {
                 display: none;
             }
         }
         &:not(:nth-child(4), :nth-child(7), :nth-child(8), :nth-child(9)){
-            @media (max-width: $mediaWidth) {
+            @media (max-width: 1167px) {
             display: none;
         }
     }
     &:nth-child(4){
-        @media (max-width: $mediaWidth) {
-            width: 44%;
+        @media (max-width: 1167px) {
+            width: 80%;
         }
     }
     &:nth-child(8):hover{
@@ -46,7 +48,7 @@
     }
     
     &__logo{
-        @media (max-width: $mediaWidth) {
+        @media (max-width: 1167px) {
             width: 92px;
             height: 34px;
         }
