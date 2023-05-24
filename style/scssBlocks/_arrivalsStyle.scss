@@ -1,5 +1,14 @@
 .arrivals{
     padding: 90px 0 125px 0;
+    @media (max-width: 1167px) {
+        padding: 0 0 125px 0;
+    }
+}
+.arrivalsWrap{
+    padding: 0 15px;
+    @media (max-width: $mediaWidth) {
+       padding: 0;
+    }
 }
 .arrivalsHeading{
     @media (max-width: $mediaWidth) {
@@ -33,28 +42,15 @@
         color: #FF9619;
     }
 }
+.arrivalsSliderSlide img {
+    width: 100%;
+}
 .arrivalsSliderSlide{
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    &_1{
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-    &_active{
-        top: -10px;
-        img {
-            width: 110%;
-        }
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
-    &_3{
-        grid-column: 3/4;
-        grid-row: 1/2;
-    }
     
     &__heading{
         margin: 15px 0 5px 0;

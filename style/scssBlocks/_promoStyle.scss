@@ -1,17 +1,22 @@
 .promo{
     height: 800px;
-    // @media (max-width: 1167px) {
-    //     height: 500px;
-    // }
+    @media (max-width: 1024px) {
+        height: 650px;
+    }
+    @media (max-width: $mediaWidth) {
+        height: auto;
+        padding-bottom: 54px;
+    }
 }
 .promoContainer{
     background: #CCB2A3;
     height: 600px;
     @media (max-width: 1167px) {
-        height: 410px;
+        height: 60%
     }
     @media (max-width: $mediaWidth) {
-        height: 574px;
+        height: auto;
+        padding-bottom: 54px;
     }
 }
 .promoWrap{
@@ -92,7 +97,6 @@
     }
 }
 .promoRight{
-    height: 870px;
 
     @media (max-width: $mediaWidth) {
         display: flex;
@@ -118,12 +122,11 @@
 // swiperStyle
 .promoSwiper{
     position: relative;
-    height: 100%;
     @media (max-width: 1167px) {
         height: 450px;
     }
     @media (max-width: $mediaWidth) {
-        
+        height: auto;
     }
 }
 .promoSwiperSlides{

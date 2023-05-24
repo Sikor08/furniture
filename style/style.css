@@ -36,6 +36,11 @@ ul {
     padding: 25px 18px;
   }
 }
+@media (max-width: 768px) {
+  .headerWrap {
+    padding: 0;
+  }
+}
 
 .headerNav {
   display: flex;
@@ -191,6 +196,17 @@ ul {
 .promo {
   height: 800px;
 }
+@media (max-width: 1024px) {
+  .promo {
+    height: 650px;
+  }
+}
+@media (max-width: 768px) {
+  .promo {
+    height: auto;
+    padding-bottom: 54px;
+  }
+}
 
 .promoContainer {
   background: #CCB2A3;
@@ -198,12 +214,13 @@ ul {
 }
 @media (max-width: 1167px) {
   .promoContainer {
-    height: 410px;
+    height: 60%;
   }
 }
 @media (max-width: 768px) {
   .promoContainer {
-    height: 574px;
+    height: auto;
+    padding-bottom: 54px;
   }
 }
 
@@ -298,9 +315,6 @@ ul {
   }
 }
 
-.promoRight {
-  height: 870px;
-}
 @media (max-width: 768px) {
   .promoRight {
     display: flex;
@@ -327,13 +341,18 @@ ul {
 
 .promoSwiper {
   position: relative;
-  height: 100%;
 }
 @media (max-width: 1167px) {
   .promoSwiper {
     height: 450px;
   }
 }
+@media (max-width: 768px) {
+  .promoSwiper {
+    height: auto;
+  }
+}
+
 .promoSwiperSlides__slide {
   width: 100%;
 }
@@ -393,6 +412,20 @@ ul {
 .arrivals {
   padding: 90px 0 125px 0;
 }
+@media (max-width: 1167px) {
+  .arrivals {
+    padding: 0 0 125px 0;
+  }
+}
+
+.arrivalsWrap {
+  padding: 0 15px;
+}
+@media (max-width: 768px) {
+  .arrivalsWrap {
+    padding: 0;
+  }
+}
 
 @media (max-width: 768px) {
   .arrivalsHeading {
@@ -432,28 +465,16 @@ ul {
   color: #FF9619;
 }
 
+.arrivalsSliderSlide img {
+  width: 100%;
+}
+
 .arrivalsSliderSlide {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-}
-.arrivalsSliderSlide_1 {
-  grid-column: 1/2;
-  grid-row: 1/2;
-}
-.arrivalsSliderSlide_active {
-  top: -10px;
-  grid-column: 2/3;
-  grid-row: 1/2;
-}
-.arrivalsSliderSlide_active img {
-  width: 110%;
-}
-.arrivalsSliderSlide_3 {
-  grid-column: 3/4;
-  grid-row: 1/2;
 }
 .arrivalsSliderSlide__heading {
   margin: 15px 0 5px 0;
@@ -787,7 +808,7 @@ ul {
   .coloredRectangle {
     width: 67px;
     height: 15px;
-    bottom: -12px;
+    bottom: -10px;
     left: 12%;
   }
 }

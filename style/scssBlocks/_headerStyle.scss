@@ -10,6 +10,9 @@
     @media (max-width: 1167px) {
         padding: 25px 18px;
     }
+    @media (max-width: $mediaWidth) {
+        padding: 0;
+    }
 }
 .headerNav{
     display: flex;
