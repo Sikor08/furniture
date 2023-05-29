@@ -1,11 +1,9 @@
 const mobileImages = document.querySelectorAll('.slider .sliderList .sliderSlide');
 const sliderLine = document.querySelector('.slider .sliderList');
-console.log(mobileImages)
 let count = 0;
 let width;
 
 function init() {
-    console.log('resize');
     width = document.querySelector('.slider').offsetWidth;
     sliderLine.style.width = width * mobileImages.length + 'px';
     mobileImages.forEach(item => {
@@ -42,12 +40,10 @@ function rollSlider() {
 
 const mobileImagesBottom = document.querySelectorAll('.sliderBottom .sliderListBottom .sliderSlideBottom');
 const sliderLineBottom = document.querySelector('.sliderBottom .sliderListBottom');
-console.log(mobileImagesBottom)
 let count1 = 0;
 let width1;
 
 function initBottom() {
-    console.log('resize');
     width1 = document.querySelector('.sliderBottom').offsetWidth;
     sliderLineBottom.style.width = width1 * mobileImagesBottom.length + 'px';
     mobileImagesBottom.forEach(item => {

@@ -46,6 +46,9 @@ ul {
   display: flex;
   gap: 64px;
 }
+.headerNav :nth-child(6) {
+  font-family: system-ui;
+}
 @media (max-width: 1167px) {
   .headerNav {
     gap: 35px;
@@ -434,10 +437,9 @@ ul {
 }
 
 .arrivalsSlider {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
+  position: relative;
+  padding: 200px 50px;
+  overflow: hidden;
 }
 @media (max-width: 768px) {
   .arrivalsSlider {
@@ -445,13 +447,46 @@ ul {
   }
 }
 .arrivalsSlider__buttons {
-  margin-bottom: 100px;
+  position: absolute;
+  top: 31%;
+}
+@media (max-width: 1169px) {
+  .arrivalsSlider__buttons {
+    top: 25%;
+  }
+}
+@media (max-width: 1024px) {
+  .arrivalsSlider__buttons {
+    top: 20%;
+  }
+}
+.arrivalsSlider__left {
+  left: 0;
+}
+.arrivalsSlider__right {
+  right: 0;
 }
 
 .arrivalsSliderList {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12%;
+  position: absolute;
+  top: 0;
+  left: 4%;
+  width: 100%;
+  transition: all ease 1s;
+}
+@media (max-width: 1169px) {
+  .arrivalsSliderList {
+    gap: 21%;
+    width: 77%;
+  }
+}
+@media (max-width: 1024px) {
+  .arrivalsSliderList {
+    width: 76%;
+  }
 }
 
 .arrivalsHeading {
@@ -475,6 +510,13 @@ ul {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  min-width: 254px;
+  min-height: 250px;
+}
+@media (max-width: 1169px) {
+  .arrivalsSliderSlide {
+    min-width: 25%;
+  }
 }
 .arrivalsSliderSlide__heading {
   margin: 15px 0 5px 0;
