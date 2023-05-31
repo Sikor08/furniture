@@ -26,6 +26,8 @@
     &__buttons{
         position: absolute;
         top: 31%;
+        border: none;
+        background-color: inherit;
         @media (max-width: $siteWidth) {
             top: 25%;
 

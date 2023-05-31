@@ -1,5 +1,6 @@
 .individual{
     padding: 55px 0;
+    margin-bottom: 100px;
     
     &__heading{
         font-family: 'Raleway';
@@ -11,7 +12,7 @@
         margin-bottom: 25px;
         max-width: 370px;
         &_marked{
-            color: #FF9619;
+            color: $marked;
         }
         @media (max-width: $mediaWidth) {font-weight: 700;
             font-size: 20px;
@@ -52,7 +53,7 @@
     }
     &__button{
         padding: 13px 18px;
-        background-color: #FF9619;
+        background-color: $marked;
         font-family: 'Raleway';
         font-weight: 700;
         font-size: 16px;
@@ -187,7 +188,7 @@
 .coloredRectangle{
     width: 205px;
     height: 54px;
-    background-color: #FF9619;
+    background-color: $marked;
     position: absolute;
     left: 29%;
     z-index: 4;
@@ -207,7 +208,7 @@
 .furnitureRectangle{
     width: 149px;
     height: 110px;
-    background-color: #FF9619;
+    background-color: $marked;
     position: absolute;
     top: -40px;
     z-index: 4;

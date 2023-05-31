@@ -1,0 +1,93 @@
+.history{
+    padding: 100px 0;
+}
+.historyTop{
+    position: relative;
+}
+.historyHeading{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 150%;
+    
+    &_marked{
+        color: $marked;
+        @media (max-width: $siteWidth) {
+            padding: 0 0 0 15px;
+        }
+    }
+}
+.historyDescription{
+    position: absolute;
+    z-index: 2;
+    top: 100px;
+    width: 538px;
+    padding: 51px 0 51px 82px;;
+    background-color: #5B5B5B;;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    font-family: 'Raleway';
+    @media (max-width: $siteWidth) {
+        top: 130px;
+        width: auto;
+        padding: 15px;
+    }
+    @media (max-width: $mediaWidth) {
+        position: static;
+        padding: 40px 15px 60px 15px;
+    }
+    &__heading{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 125%;
+        font-variant: small-caps;
+    }
+    &__text{
+        max-width: 454px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 135%;
+        @media (max-width: $mediaWidth) {
+           max-width: fit-content;
+        }
+    }
+}
+.historyImg{
+    position: absolute;
+    top: 90px;
+    right: 0;
+    @media (max-width: $siteWidth) {
+        top: 120px;
+        right: 1%;
+
+     }
+    @media (max-width: $mediaWidth) {
+       position: static;
+       padding: 0 15px;
+
+    }
+    & img{
+        width: 100%;
+        margin-top: -42px;
+    }
+}
+.historyRect{
+    width: 101px;
+    height: 55px;
+    background-color: $marked;
+    position: absolute;
+    top: 250px;
+    z-index: 3;
+    @media (max-width: $siteWidth) {
+        top: 183px;
+    }
+    @media (max-width: $mediaWidth) {
+        width: 75px;
+        height: 78px;
+        right: 0;
+        top: 280px;
+    }
+    @media (max-width: 500px) {
+        top: 320px;
+    }
+}
