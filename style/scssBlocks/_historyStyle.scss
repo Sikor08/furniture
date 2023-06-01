@@ -1,8 +1,12 @@
-.history{
-    padding: 100px 0;
-}
 .historyTop{
     position: relative;
+    height: 650px;
+    @media (max-width: $mediaWidth) {
+        height: 900px;
+    }
+    @media (max-width: 500px) {
+        height: 750px;
+    }
 }
 .historyHeading{
     font-family: 'Raleway';
@@ -89,5 +93,39 @@
     }
     @media (max-width: 500px) {
         top: 320px;
+    }
+}
+// bottom
+
+.historyBottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: $siteWidth) {
+        font-size: 111px;
+        padding: 0 16px;
+
+    }
+    @media (max-width: $mediaWidth) {
+        position: relative;
+        align-items: end;
+    }
+    &__year{
+        font-weight: 300;
+        font-size: 25px;
+        color: #343434;
+    }
+    &__age{
+        font-weight: 600;
+        font-size: 144px;
+        line-height: 150%;
+        color: rgba(90, 90, 90, 0.1);
+        @media (max-width: $mediaWidth) {
+            position: absolute;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            font-size: 111px;
+        }
     }
 }

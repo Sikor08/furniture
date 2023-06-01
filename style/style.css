@@ -897,12 +897,19 @@ ul {
   }
 }
 
-.history {
-  padding: 100px 0;
-}
-
 .historyTop {
   position: relative;
+  height: 650px;
+}
+@media (max-width: 768px) {
+  .historyTop {
+    height: 900px;
+  }
+}
+@media (max-width: 500px) {
+  .historyTop {
+    height: 750px;
+  }
 }
 
 .historyHeading {
@@ -1010,4 +1017,62 @@ ul {
   .historyRect {
     top: 320px;
   }
+}
+
+.historyBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1169px) {
+  .historyBottom {
+    font-size: 111px;
+    padding: 0 16px;
+  }
+}
+@media (max-width: 768px) {
+  .historyBottom {
+    position: relative;
+    align-items: end;
+  }
+}
+.historyBottom__year {
+  font-weight: 300;
+  font-size: 25px;
+  color: #343434;
+}
+.historyBottom__age {
+  font-weight: 600;
+  font-size: 144px;
+  line-height: 150%;
+  color: rgba(90, 90, 90, 0.1);
+}
+@media (max-width: 768px) {
+  .historyBottom__age {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 111px;
+  }
+}
+
+.publicSwiper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: none;
+}
+.publicSwiper__right, .publicSwiper__left {
+  border: none;
+  background-color: inherit;
+}
+
+.publicSwiper-line {
+  display: flex;
+  gap: 15px;
+}
+
+.publicSwiperSlide {
+  outline: 2px solid black;
 }/*# sourceMappingURL=style.css.map */

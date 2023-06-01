@@ -1,0 +1,17 @@
+.publicSwiper{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    &__right, &__left{
+        border: none;
+        background-color: inherit;
+    }
+    border: none;
+}
+.publicSwiper-line{
+    display: flex;
+    gap: 15px;
+}
+.publicSwiperSlide{
+    outline: 2px solid black;
+}
