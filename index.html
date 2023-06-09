@@ -351,41 +351,78 @@
                         <span class="lastPublic__heading lastPublic__heading_marked">П</span>оследние публикации
                     </h3>
                     <div class="publicSwiper">
-                        <button class="publicSwiper__left">
-                            <svg width="19" height="31" viewBox="0 0 19 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M18.0898 0.742648L1.9985 15.9595L18.0898 29.9082" stroke="#5A5A5A" stroke-opacity="0.7" stroke-width="2"/>
-                                </svg>
-                                
-                        </button>
-                        <ul class="publicSwiper-line">
-                            <li class="publicSwiperSlide">
-                                <img class="publicSwiperSlide__img" src="img/publicImg1.jpg" alt="">
-                                <p class="publicSwiperSlide__heading">MARTIN</p>
-                            </li>
-                            <li class="publicSwiperSlide">
-                                <img class="publicSwiperSlide__img" src="img/publicImg2.jpg" alt="">
-                                <p class="publicSwiperSlide__heading">MARTIN</p>
-                            </li>
-                            <li class="publicSwiperSlide">
-                                <img class="publicSwiperSlide__img" src="img/publicImg3.jpg" alt="">
-                                <p class="publicSwiperSlide__heading">MARTIN</p>
-                            </li>
-                            <li class="publicSwiperSlide">
-                                <img class="publicSwiperSlide__img" src="img/publicImg4.jpg" alt="">
-                                <p class="publicSwiperSlide__heading">MARTIN</p>
-                            </li>
-                            
-
-
-                        </ul>
                         
-                        <button class="publicSwiper__right">
-                            <svg width="19" height="31" viewBox="0 0 19 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0.999999 0.742648L17.0913 15.9595L1 29.9082" stroke="#5A5A5A" stroke-opacity="0.7" stroke-width="2"/>
-                                </svg>
-                        </button>
+                            <button class="publicSwiper__left">
+                                <svg width="16" height="25" viewBox="0 0 16 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.0117 23.9082L0.999742 12.4082L15.0117 0.908206" stroke="#343434"/>
+                                    </svg>
+                            </button>
+                            <div class="publicSwiper__wrap">
+                                <ul class="publicSwiper__line">
+                                    <li class="publicSlide">
+                                        <img class="publicSlide__img" src="img/publicImg1.jpg" alt="">
+                                        <p class="publicSlide__title">MARTIN</p>
+                                    </li>
+                                    <li class="publicSlide">
+                                        <img class="publicSlide__img" src="img/publicImg2.jpg" alt="">
+                                        <p class="publicSlide__title">MARTIN</p>
+                                    </li>
+                                    <li class="publicSlide">
+                                        <img class="publicSlide__img" src="img/publicImg3.jpg" alt="">
+                                        <p class="publicSlide__title">TOSCANA</p>
+                                    </li>
+                                    <li class="publicSlide">
+                                        <img class="publicSlide__img" src="img/publicImg4.jpg" alt="">
+                                        <p class="publicSlide__title">LEONARDO</p>
+                                    </li>
+                                    <li class="publicSlide">
+                                        <img class="publicSlide__img" src="img/publicImg1.jpg" alt="">
+                                        <p class="publicSlide__title">MARTIN</p>
+                                    </li>
+                                    <li class="publicSlide">
+                                        <img class="publicSlide__img" src="img/publicImg1.jpg" alt="">
+                                        <p class="publicSlide__title">MARTIN</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="publicSwiper__right"> 
+                                <svg width="16" height="25" viewBox="0 0 16 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.07812 0.908203L15.0901 12.4082L1.07812 23.9082" stroke="#343434" stroke-opacity="0.2"/>
+                                    </svg>
+                            </button>
+                    </div>
+                    <div class="publicMediaSwiper">
+                        <div class="publicMediaSwiper__wrap">
+                                <ul class="publicMediaSwiper__line">
+                                    <li class="publicMediaSwiperSlide publicMediaSwiperSlide__slide1">
+                                        <img src="img/publicMobileImg.jpg" alt="" class="publicMediaSwiperSlide__img">
+                                        <p class="publicMediaSwiperSlide__title">
+                                            MARTIN
+                                        </p>
+                                    </li>
+                                    <li class="publicMediaSwiperSlide publicMediaSwiperSlide__slide2">
+                                        <img src="img/publicImg2.jpg" alt="" class="publicMediaSwiperSlide__img">
+                                        <p class="publicMediaSwiperSlide__title">
+                                            MARTIN
+                                        </p>
+                                    </li>
+                                    <li class="publicMediaSwiperSlide publicMediaSwiperSlide__slide3">
+                                        <img src="img/publicImg3.jpg" alt="" class="publicMediaSwiperSlide__img">
+                                        <p class="publicMediaSwiperSlide__title">
+                                            MARTIN
+                                        </p>
+                                    </li>
+                                </ul>
+                        </div>
+                        
+                        </div>
                     </div>
                 </div>
+                <div class="publicMediaSwiperPagination">
+                    <input type="range" min="1" max="6" value="6" class="slider" id="myRange">
+
+                    </div> 
+
             </div>
         </div>
     </div>
@@ -394,5 +431,6 @@
     <script src="arrivalsSwiper.js"></script>
     <script src="mobSlider.js"></script>
     <script src="arrivDeskSwiper.js"></script> -->
+    <script src="publicSwiper.js"></script>
 </body>
 </html>

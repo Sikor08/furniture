@@ -8,6 +8,10 @@ h3 h2 {
   padding: 0;
 }
 
+ul {
+  margin: 0;
+}
+
 p {
   margin: 0;
 }
@@ -1020,6 +1024,7 @@ ul {
 }
 
 .historyBottom {
+  font-family: "Raleway";
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1057,22 +1062,140 @@ ul {
   }
 }
 
-.publicSwiper {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  border: none;
+.lastPublicWrap {
+  padding: 0 17px;
 }
-.publicSwiper__right, .publicSwiper__left {
+
+.lastPublic__heading {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 150%;
+}
+@media (max-width: 768px) {
+  .lastPublic__heading {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+  }
+}
+.lastPublic__heading_marked {
+  color: #FF9619;
+}
+
+.publicSwiper {
+  height: 302px;
+  border: 2px solid black;
+  position: relative;
+  display: flex;
+}
+@media (max-width: 768px) {
+  .publicSwiper {
+    display: none;
+  }
+}
+.publicSwiper__left {
+  position: absolute;
+  left: 0;
   border: none;
   background-color: inherit;
+  align-self: center;
 }
-
-.publicSwiper-line {
+.publicSwiper__right {
+  position: absolute;
+  right: 0;
+  border: none;
+  background-color: inherit;
+  align-self: center;
+}
+.publicSwiper__wrap {
+  outline: 2px solid green;
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
   display: flex;
-  gap: 15px;
+  overflow: hidden;
+  transition: all ease 1s;
+}
+.publicSwiper__line {
+  transition: all ease 1s;
+  position: absolute;
+  outline: 1px solid red;
+  display: flex;
+  gap: 7px;
 }
 
-.publicSwiperSlide {
-  outline: 2px solid black;
+.publicWrapper {
+  border: 3px solid yellow;
+}
+
+.publicSlide {
+  border: 1px solid #000;
+  text-align: center;
+}
+.publicSlide__img {
+  width: 100%;
+}
+.publicSlide__title {
+  font-family: "Raleway";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #343434;
+}
+
+@media (min-width: 768px) {
+  .publicMediaSwiper {
+    display: none;
+  }
+}
+.publicMediaSwiper__wrap {
+  text-align: center;
+  margin: 15px 0 47px 0;
+}
+
+.publicMediaSwiperSlide__img {
+  width: 100%;
+}
+.publicMediaSwiperSlide__title {
+  margin-top: 15px;
+  font-family: "Raleway";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #343434;
+}
+.publicMediaSwiperSlide__slide2, .publicMediaSwiperSlide__slide3 {
+  display: none;
+}
+
+.publicMediaSwiperPagination {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .publicMediaSwiperPagination {
+    display: none;
+  }
+}
+
+.slider {
+  -webkit-appearance: none; /* Override default CSS styles */
+  -moz-appearance: none;
+       appearance: none;
+  width: 100%; /* Full-width */
+  height: 6px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */ /* 0.2 seconds transition on hover */
+  transition: opacity 0.2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 15%; /* Set a specific slider handle width */
+  height: 6px; /* Slider handle height */
+  background: #FF9619; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 20px;
 }/*# sourceMappingURL=style.css.map */

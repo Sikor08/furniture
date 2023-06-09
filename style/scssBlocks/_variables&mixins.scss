@@ -6,6 +6,9 @@ h3 h2{
     margin: 0;
     padding: 0;
 }
+ul{
+    margin: 0;
+}
 $siteWidth: 1169px;
 $mediaWidth: 768px;
 $marked: #FF9619;
@@ -23,6 +26,7 @@ ul{
     max-width: $siteWidth;
     margin: auto;
     @media (max-width:$mediaWidth) {
+        
     }
 }
 
