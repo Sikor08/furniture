@@ -2,16 +2,11 @@
     @media (max-width: $mediaWidth) {
         width: 100%;
     }
-    
-
 }
 .headerWrap{
     padding: 25px 0 9px 0;
     @media (max-width: 1167px) {
         padding: 25px 18px;
-    }
-    @media (max-width: $mediaWidth) {
-        padding: 0;
     }
 }
 .headerNav{
@@ -23,7 +18,6 @@
     @media (max-width: 1167px) {
         gap: 35px;
     }
-  
     &__item{
         font-family: 'Raleway';
         font-weight: 600;

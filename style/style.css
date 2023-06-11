@@ -51,11 +51,6 @@ ul {
     padding: 25px 18px;
   }
 }
-@media (max-width: 768px) {
-  .headerWrap {
-    padding: 0;
-  }
-}
 
 .headerNav {
   display: flex;
@@ -435,11 +430,6 @@ ul {
 
 .arrivalsWrap {
   padding: 0 15px;
-}
-@media (max-width: 768px) {
-  .arrivalsWrap {
-    padding: 0;
-  }
 }
 
 @media (max-width: 768px) {

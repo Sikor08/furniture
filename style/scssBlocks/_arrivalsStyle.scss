@@ -6,9 +6,6 @@
 }
 .arrivalsWrap{
     padding: 0 15px;
-    @media (max-width: $mediaWidth) {
-       padding: 0;
-    }
 }
 .arrivalsHeading{
     @media (max-width: $mediaWidth) {
