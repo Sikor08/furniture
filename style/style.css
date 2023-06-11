@@ -29,6 +29,14 @@ ul {
   max-width: 1169px;
   margin: auto;
 }
+.displayNone {
+  display: none;
+}
+
+.displayBlock {
+  display: block;
+}
+
 @media (max-width: 768px) {
   .header {
     width: 100%;
@@ -150,9 +158,6 @@ ul {
 .burger {
   z-index: 2;
   cursor: pointer;
-}
-.burger__active {
-  position: fixed;
 }
 .burger__active :nth-child(1) {
   display: none;
@@ -1055,7 +1060,6 @@ ul {
 @media (max-width: 768px) {
   .historyBottom__age {
     position: absolute;
-    width: 100%;
     display: flex;
     justify-content: center;
     font-size: 111px;
@@ -1084,8 +1088,6 @@ ul {
 }
 
 .publicSwiper {
-  height: 302px;
-  border: 2px solid black;
   position: relative;
   display: flex;
 }
@@ -1109,7 +1111,6 @@ ul {
   align-self: center;
 }
 .publicSwiper__wrap {
-  outline: 2px solid green;
   position: relative;
   width: 90%;
   margin: 0 auto;
@@ -1120,17 +1121,11 @@ ul {
 .publicSwiper__line {
   transition: all ease 1s;
   position: absolute;
-  outline: 1px solid red;
   display: flex;
   gap: 7px;
 }
 
-.publicWrapper {
-  border: 3px solid yellow;
-}
-
 .publicSlide {
-  border: 1px solid #000;
   text-align: center;
 }
 .publicSlide__img {
@@ -1165,9 +1160,6 @@ ul {
   line-height: 22px;
   color: #343434;
 }
-.publicMediaSwiperSlide__slide2, .publicMediaSwiperSlide__slide3 {
-  display: none;
-}
 
 .publicMediaSwiperPagination {
   width: 100%;
@@ -1178,7 +1170,7 @@ ul {
   }
 }
 
-.slider {
+.publickSlider {
   -webkit-appearance: none; /* Override default CSS styles */
   -moz-appearance: none;
        appearance: none;
@@ -1190,7 +1182,7 @@ ul {
   transition: opacity 0.2s;
 }
 
-.slider::-webkit-slider-thumb {
+.publickSlider::-webkit-slider-thumb {
   -webkit-appearance: none; /* Override default look */
   appearance: none;
   width: 15%; /* Set a specific slider handle width */

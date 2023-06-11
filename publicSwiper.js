@@ -1,41 +1,47 @@
 const publicLine = document.querySelector('.publicSwiper__line');
+const publicSwiper = document.querySelector('.publicSwiper')
 const publicSlidesList = document.querySelectorAll('.publicSlide')
 const wrap = document.querySelector('.publicSwiper__wrap');
-
 const publicLeft = document.querySelector('.publicSwiper__left');
 const publicRight = document.querySelector('.publicSwiper__right');
-
 const getSlideWidth = () => {
-    let slideWidth = (wrap.clientWidth / 4) - 8 + 'px'
-    return slideWidth
+    let publicSlideWidth = (wrap.clientWidth / 4) - 8 + 'px'
+    return publicSlideWidth
 };
+getSlideWidth()
+let height = (parseInt(getSlideWidth()) * 1.2).toFixed(0)
+publicSwiper.style.height = height +'px'
 publicSlidesList.forEach(slide => {
-    slide.style.width = getSlideWidth()
+    slide.style.width = getSlideWidth();
 });
+let ofSet = parseInt(getSlideWidth())
 window.addEventListener('resize', () => {
-    console.log('resize');
+    publicLine.style.left = 0
+    ofSet = 0
+    ofSet = parseInt(getSlideWidth())
+    console.log(ofSet)
     publicSlidesList.forEach(slide => {
         slide.style.width = getSlideWidth();
     })
+    let height = (parseInt(getSlideWidth()) * 1.2).toFixed(0)
+    publicSwiper.style.height = height +'px'
 })
-let ofSet = getSlideWidth()
-console.log(ofSet);
-
-publicLeft.addEventListener('click', () => {
-    publicLine.style.left = getSlideWidth()
+    publicLeft.addEventListener('click', () => {
+        console.log(ofSet)
+    publicLine.style.left = - (ofSet + 8) + 'px';
+    ofSet += (parseInt(getSlideWidth())) + 8;
+    ofSet >= 508 ? ofSet = -8 : ofSet 
 })
-
-
-
-
-var slider = document.getElementById("myRange");
-var output = document.getElementById("demo");
-// output.innerHTML = slider.value; // Display the default slider value
-
-// Update the current slider value (each time you drag the slider handle)
-slider.oninput = function() {
-    console.log(this.value)
-    if (value = 2) {
-        
-    } 
+//mobile
+let publicMediaSwiper = document.getElementById("publicMediaSwiper");
+publicMediaSwiper.oninput = function() {
+    const publickSlides = document.querySelectorAll('.publicMediaSwiperSlide');
+    publickSlides.forEach(slide => {
+        if (slide.classList.contains(`publicMediaSwiperSlide__slide${this.value}`)) {
+            slide.classList.remove('displayNone')
+        } else {
+            slide.classList.add('displayNone')
+        }
+    })
 }
+

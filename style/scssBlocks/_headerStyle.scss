@@ -116,8 +116,6 @@
     z-index: 2;
     cursor: pointer;
     &__active{
-        position: fixed;
-
         :nth-child(1){
             display: none;
         }
