@@ -33,7 +33,11 @@ window.addEventListener('resize', () => {
     ofSet >= 508 ? ofSet = -8 : ofSet 
 })
 //mobile
+const publicMediaLine = document.querySelectorAll('.publicMediaSwiperSlide');
+let publicMediaMaxValue = publicMediaLine.length;
+console.log(publicMediaMaxValue)
 let publicMediaSwiper = document.getElementById("publicMediaSwiper");
+publicMediaSwiper.setAttribute("max", publicMediaMaxValue)
 publicMediaSwiper.oninput = function() {
     const publickSlides = document.querySelectorAll('.publicMediaSwiperSlide');
     publickSlides.forEach(slide => {
