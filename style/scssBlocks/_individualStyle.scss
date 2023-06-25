@@ -1,0 +1,237 @@
+.individual{
+    padding: 55px 0;
+    margin-bottom: 100px;
+    
+    &__heading{
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 100%;
+        font-variant: small-caps;
+        color: #FFFFFF;
+        margin-bottom: 25px;
+        max-width: 370px;
+        &_marked{
+            color: $marked;
+        }
+        @media (max-width: $mediaWidth) {font-weight: 700;
+            font-size: 20px;
+        }
+    }
+    &__textUp{
+        font-family: 'Raleway';
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 125%;
+        letter-spacing: 0.1em;
+        color: #FFFFFF;
+        margin-bottom: 11px;
+        @media (max-width: $mediaWidth) {font-weight: 700;
+            font-size: 16px;
+        }
+
+    }
+    &__textBottom{
+        font-family: 'Raleway';
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 135%;
+        letter-spacing: 0.1em;
+        color: #FFFFFF;
+        margin-bottom: 26px;
+        max-width: 375px;
+
+        @media (max-width: 1024px) {
+            margin-bottom: 17px;
+        }
+        @media (max-width: $mediaWidth) {
+            font-weight: 300;
+            font-size: 14px;
+            max-width: 355px;
+
+        }
+    }
+    &__button{
+        padding: 13px 18px;
+        background-color: $marked;
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        border: none;
+        &_desctop{
+            @media (max-width: $mediaWidth) {
+                display: none;
+            }
+        }
+        &_mobile{
+            
+            display: none;
+            @media (max-width: $mediaWidth) {
+                display: block;
+                position: absolute;
+                z-index: 4;
+                bottom: -30%;
+                align-self: center;
+            }
+        }
+    }
+
+}
+.individualWrap{
+    position: relative;
+    height: 482px;
+    display: flex;
+    flex-direction: column;
+
+}
+.rectangles{
+    display: flex;
+    justify-content: end;
+    position: relative;
+    width: 60%;
+    height: 390px;
+   background: #A9C2BE;
+   z-index: 2;
+   @media (max-width: $mediaWidth) {
+    width: 80%;
+    position: absolute;
+    right: 0;
+    height: 260px;
+    top: 275px;
+    background-image: url(/img/cage.png);
+
+}
+}
+.rectLeft{
+    width: 70%;
+    height: 390px;
+    background-image: url(/img/cage.png);
+    @media (max-width: $mediaWidth) {
+        display: none;
+    }
+
+}
+.rectRight{
+    width: 30%;
+    height: 390px;
+    @media (max-width: $mediaWidth) {
+        display: none;
+    }
+}
+.cage{
+    position: absolute;
+    z-index: 5;
+}
+.grey{
+    display: flex;
+    width: 71%;
+    height: 94%;
+    background: #5B5B5B;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    @media (max-width: 1024px) {
+        width: 90%;
+        height: 89%;
+    }
+    @media (max-width: $mediaWidth) {
+        display: block;
+        width: 100%;
+        height: 440px;
+    }
+}
+.grey1{
+    width: 44%;
+    @media (max-width: 1024px) {
+        width: 70%;
+    }
+}
+.grey2{
+    width: 56%;
+    padding: 101px 0 0 48px;
+    @media (max-width: $mediaWidth) {
+        width: 70%;
+        padding: 79px 0 0 18px;
+    }
+}
+.sofa{
+    background: #C0C0C0;
+    position: absolute;
+    top: 27px;
+    right: 40%;
+    z-index: 3;
+    @media (max-width: 1024px) {
+        margin-left: 20px;
+        bottom: 75px;
+    }
+    @media (max-width: $mediaWidth) {
+        height: 239px;
+        width: 90%;
+        right: 5%;
+        top: 240px;
+        bottom: 0;
+        margin: 0;
+    }
+}
+.sofa img {
+    width: 100%;
+    height: 100%;
+    @media (max-width: $mediaWidth) {
+        height: 100%;
+    }
+
+}
+.coloredRectangle{
+    width: 205px;
+    height: 54px;
+    background-color: $marked;
+    position: absolute;
+    left: 29%;
+    z-index: 4;
+    bottom: 0;
+    @media (max-width: 1024px) {
+        bottom: 21px;
+        left: 10%;
+    }
+    @media (max-width: $mediaWidth) {
+        width: 67px;
+        height: 15px;
+        bottom: -10px;
+        left: 12%;
+    }
+
+}
+.furnitureRectangle{
+    width: 149px;
+    height: 110px;
+    background-color: $marked;
+    position: absolute;
+    top: -40px;
+    z-index: 4;
+    right: 15%;
+    @media (max-width: $mediaWidth) {font-weight: 700;
+        width: 92px;
+        height: 70px;
+        right: 0;
+    }
+    &__text{
+        font-family: 'Raleway';
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 125%;
+        letter-spacing: 0.245em;
+        color: #FFFFFF;
+        position: absolute;
+        top: 55%;
+        left: 10px;
+        @media (max-width: $mediaWidth) {
+            font-size: 10px;
+            line-height: 129.5%;
+            top: 69%;
+        }
+    }
+}

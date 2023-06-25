@@ -2,8 +2,16 @@ body{
     position: relative;
     height: 1000vh;
 }
+h3 h2{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    margin: 0;
+}
 $siteWidth: 1169px;
 $mediaWidth: 768px;
+$marked: #FF9619;
 p{
     margin: 0;
 }
@@ -11,12 +19,21 @@ ul{
     list-style-type: none;
     padding: 0;
 }
+.marked{
+    color: $marked;
+}
 .wrapper{
     max-width: $siteWidth;
     margin: auto;
     @media (max-width:$mediaWidth) {
-        padding: 0 20px;
+        
     }
+}
+.displayNone{
+    display: none;
+}
+.displayBlock{
+    display: block;
 }
 
 

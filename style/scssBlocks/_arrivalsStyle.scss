@@ -1,5 +1,11 @@
 .arrivals{
     padding: 90px 0 125px 0;
+    @media (max-width: 1167px) {
+        padding: 0 0 125px 0;
+    }
+}
+.arrivalsWrap{
+    padding: 0 15px;
 }
 .arrivalsHeading{
     @media (max-width: $mediaWidth) {
@@ -7,25 +13,52 @@
     }
 }
 .arrivalsSlider{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+    position: relative;
+    padding: 200px 50px;
+    overflow: hidden;
+
+    @media (max-width: $mediaWidth) {
+        display: none;
+    }
     &__buttons{
-        margin-bottom: 50px;
-        @media (max-width: $mediaWidth) {
-            display: none;
+        position: absolute;
+        top: 31%;
+        border: none;
+        background-color: inherit;
+        @media (max-width: $siteWidth) {
+            top: 25%;
+
         }
+        @media (max-width: 1024px) {
+            top: 20%;
+        }
+    }
+    &__left{
+        left: 0;
+    }
+    &__right{
+        right: 0;
     }
 }
 .arrivalsSliderList{
     display: flex;
-    gap: 30px;
-    @media (max-width: $mediaWidth) {
-        flex-direction: column;
-        gap: 60px;
-        margin-bottom: 60px;
+    justify-content: space-between;
+    gap: 12%;
+    position: absolute;
+    top: 0;
+    left: 4%;
+    width: 100%;
+    transition: all ease 1s;
+
+    @media (max-width: $siteWidth) {
+        gap: 21%;
+        width: 77%;
     }
+    @media (max-width: 1024px) {
+        width: 76%;
+    }
+    
+
 }
 .arrivalsHeading{
     font-family: 'Raleway';
@@ -37,19 +70,22 @@
         color: #FF9619;
     }
 }
+
+.arrivalsSliderSlide img {
+    width: 100%;
+}
 .arrivalsSliderSlide{
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    &_active:hover{
-        width: 120%;
+    min-width: 254px;
+    min-height: 250px;
+    @media (max-width: $siteWidth) {
+        min-width: 25%;
     }
-    &__3{
-        @media (max-width: $mediaWidth) {
-            display: none;
-        }
+    @media (max-width: 1024px) {
     }
     
     &__heading{
@@ -72,15 +108,8 @@
     }
 }
 .slideArrow{
+    display: none;
     position: absolute;
-    &__left{
-        left: -35px;
-        top: 35%;
-    }
-    &__right{
-        right: -35px;
-        top: 35%;
-    }
 }
 .arrivalsBtn{
     display: flex;
@@ -98,3 +127,52 @@
         background-color: #FF9619;
     }
 }
+.mobileSwiper{
+    display: none;
+    position: relative;
+    @media (max-width: $mediaWidth) {
+        display: block;
+        margin-bottom: 60px;
+    }
+}
+.mobileSwiper
+.slider{
+    max-width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+// .sliderBottom{
+//     position: relative;
+// }
+.sliderSlide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sliderSlideBottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sliderBottomBtn{
+    position: absolute;
+    top: 40%;
+    &__next{
+        right: 0;
+    }
+}
+.slider-prev{
+    position: absolute;
+    top: 40%;
+}
+.slider-next{
+    position: absolute;
+    top: 40%;
+    right: 0;
+}
+.sliderList{
+    display: flex;
+    transition: all ease 1s;
+}
+
+

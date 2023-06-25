@@ -1,0 +1,123 @@
+.lastPublicWrap{
+    padding: 0 17px;
+}
+.lastPublic__heading{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 150%;
+    @media (max-width: $mediaWidth) {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 150%;
+    }
+    &_marked{
+        color: $marked;
+    }
+}
+.publicSwiper{
+    position: relative;
+    display: flex;
+    @media (max-width: $mediaWidth) {
+        display: none;
+    }
+    &__left{
+        position: absolute;
+        left: 0;
+        border: none;
+        background-color: inherit;
+        align-self: center;
+    }
+    &__right{
+        position: absolute;
+        right: 0;
+        border: none;
+        background-color: inherit;
+        align-self: center;
+    }
+    &__wrap{
+        position: relative;
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        overflow: hidden;
+        transition: all ease 1s;
+    }
+    &__line{
+        transition: all ease 1s;
+        position: absolute;
+        display: flex;
+        gap: 7px;
+    }
+}
+.publicSlide{
+    text-align: center;
+    &__img{
+        width: 100%;
+    }
+    &__title{
+        font-family: 'Raleway';
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;        
+        color: #343434;
+    }
+}
+// Media
+.publicMediaSwiper{
+    @media (min-width: $mediaWidth) {
+        display: none;
+    }
+    &__wrap{
+        text-align: center;
+        margin: 15px 0 47px 0;
+    }
+}
+.publicMediaSwiperSlide{
+    &__img{
+        width: 100%;
+    }
+    &__title{
+        margin-top: 15px;
+        font-family: 'Raleway';
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #343434;
+    }
+    
+}
+
+.publicMediaSwiperPagination{
+    width: 100%;
+    @media (min-width: $mediaWidth) {
+        display: none;
+    }
+}
+.publickSlider{
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 6px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+.publickSlider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 15%; /* Set a specific slider handle width */
+    height: 6px; /* Slider handle height */
+    background: $marked; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+    border-radius: 20px;
+}
+
+// .slider::-moz-range-thumb {
+//     width: 25px; /* Set a specific slider handle width */
+//     height: 6px; /* Slider handle height */
+//     background: $marked; /* Green background */
+//     cursor: pointer; /* Cursor on hover */
+// }
